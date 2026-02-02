@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="La mejor página de los Boston Celtics que verás. Encontrarás las equipaciones, la historia del equipo o hasta comprar una visita por el estadio" />
+        <meta name="robots" content="FOLLOW, INDEX" />
+        <meta name="Author" content="Inok" /> 
+        <meta name="keywords" content="Celtics,Presupuesto,Galería,Contacto" /> 
+        <meta name="revisit-after" content="2 days" />
+        <link rel="icon" href="../assets/img/logo-celtics.png" width="2100" height="2333">
+        <title>Boston Celtics</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+<!--------------------------------------------------------------------BODY-------------------------------------------------------------->
+    <body>
+<!-------------------------------------------------------------------HEADER--------------------------------------------------------------->
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <img src="../assets/img/logo-celtics.png" alt="logo-celtics" class="logo-celtics" width="2100" height="2333">
+                </a>
+                <ul>
+                    <li><a class="home" href="../index.html">HOME</a></li>
+                    <li><a class="galeria" href="productos.html">GALERIA</a></li>
+                    <li><a class="presupuesto activo" href="presupuesto.html">PRESUPUESTO</a></li>
+                    <li><a  class="contacto" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<!----------------------------------------------------------------------SECCION ULTIMOS RESULTADOS---------------------------------------------------------->
+            <section id="ult-resultados">
+                <div class="fila">
+    <!---------------------------------------------------PARTIDO 1-------------------------------------------------------->
+                <article class="partidos">
+                    <img src="../assets/img/logo-celtics.png" alt="Celtics" class="logo-articulo"  width="2100" height="2333">
+                    <p class="resultado"><span class="team">126</span> - <span class="team">105</span></p>
+                    <img src="../assets/img/logo-lakers.png" alt="Lakers" class="logo-articulo" width="2400" height="1600">
+                </article>
+    <!---------------------------------------------------PARTIDO 2-------------------------------------------------------->
+                <article class="partidos">
+                    <img src="../assets/img/logo-celtics.png" alt="Celtics" class="logo-articulo" width="2100" height="2333">
+                    <p class="resultado"><span class="team">121</span> - <span class="team">113</span></p>
+                    <img src="../assets/img/logo-golden-state-warriors.png" alt="Golden State Warriors" class="logo-articulo" width="800" height="600">
+                </article>
+    <!---------------------------------------------------PARTIDO 3-------------------------------------------------------->
+                <article class="partidos">
+                    <img src="../assets/img/logo-celtics.png" alt="Celtics" class="logo-articulo" width="2100" height="2333">
+                    <p class="resultado"><span class="team">101</span> - <span class="team">116</span></p>
+                    <img src="../assets/img/logo-bulls.png" alt="Bulls" class="logo-articulo" width="800" height="600">
+                </article>
+    <!---------------------------------------------------PARTIDO 4-------------------------------------------------------->
+                <article class="partidos">
+                    <img src="../assets/img/logo-celtics.png" alt="Celtics" class="logo-articulo" width="2100" height="2333">
+                    <p class="resultado"><span class="team">105</span> - <span class="team">112</span></p>
+                    <img src="../assets/img/logo-knicks.png" alt="Knicks" class="logo-articulo" width="2400" height="2000">
+                </article>
+                <div class="linea-vertical"></div>
+    <!--------------------------------------------------INFO CELTICS CLASIFICACION-------------------------------------------------------->
+                    <ul>
+                        <li>
+                            Posicion en la Conferencia Este: <span class="body-span">2º</span>
+                        </li>
+                        <li>
+                            Record de la Temporada: <span class="body-span">26-16</span>
+                        </li>
+                        <li>
+                            Proximo Partido: <span class="body-span">vs Indiana Pacers, 3 Feb</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+<!----------------------------------------------------------------------SECCION FORMULARIO---------------------------------------------------------->
+            <section class="section-presupuesto"> 
+                <div class="container">
+                    <h2>Presupuesto</h2>
+                    <form>
+                        <label for="nombre">Nombre:</label> 
+                        <input type="text" class="inputs" name="nombre" required
+                        pattern="[a-zA-ZÀ-ÿ ]{2,40}" title="El nombre solo puede contener letras y espacios, entre 2 y 40 caracteres"
+                            placeholder="Escribe tu nombre">
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="inputs" name="email" required
+                            placeholder="nombre@correo.com">
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="inputs" name="telefono" required
+                            pattern="[0-9]{9}" title="Por favor, introduce solo números (9 dígitos)"
+                            placeholder="Ej: 600 000 000">
+
+                        <label for="servicio">Seleccione un servicio:</label>
+                        <select class="inputs" name="servicio" required>
+                        <option value="">Seleccione un servicio</option>
+                        <option value="visita-estadio">Compra de Entradas</option>
+                        <option value="compra-entradas">Visita al Estadio</option>
+                        <option value="merchandising">Merchandising</option>
+                        </select>
+
+                        <label for="detalles">Detalles Adicionales:</label>
+                        <textarea id="detalles" name="detalles" rows="2" required></textarea><br>
+
+                        <label for="checkbox" id="label-checkbox">Acepto los términos y condiciones</label>
+                            <input type="checkbox" id="checkbox" name="checkbox" required><br>
+
+                        <button type="submit">Solicitar Presupuesto</button>
+                </div>
+            </section>
+<!----------------------------------------------------------------------SECCION IMAGENES PRESUPUESTO---------------------------------------------------------->
+            <section class="section-presupuesto-imgs1">
+                <div class="container-imgs">
+                    <img src="../assets/img/presupuesto1.jpg" alt="presupuesto1" class="presupuestoimg img" width="800" height="1066">
+                    <p class="p-presupuesto-imgs">"Vive la intensidad de un Game Day y ruge hasta ganar. Consigue tu asiento ya."<br>
+                        "¡La gloria no se ve, se vive!"</p>
+                </div>
+            </section>
+<!----------------------------------------------------------------------SECCION IMAGENES PRESUPUESTO---------------------------------------------------------->
+            <section class="section-presupuesto-imgs2">
+                <div class="container-imgs">
+                    <img src="../assets/img/presupuesto2.jpg" alt="presupuesto2" class="presupuestoimg img" width="1024" height="576">
+                    <p class="p-presupuesto-imgs">" Visita el TD Garden,pisa el parqué sagrado, vestuarios y más. Reserva tu tour exclusivo ahora."<br>
+                        "Entra en el templo de las leyendas"</p>
+                </div>
+            </section>
+<!----------------------------------------------------------------------SECCION IMAGENES PRESUPUESTO---------------------------------------------------------->
+            <section class="section-presupuesto-imgs3">
+                <div class="container-imgs">
+                    <img src="../assets/img/presupuesto3.avif" alt="presupuesto3" class="presupuestoimg img" width="1018" height="1018">
+                    <p class="p-presupuesto-imgs">"Si eres un Celtic, tienes que llevar los colores.<br> Hazte con la equipación oficial y representa a Boston con orgullo."</p>
+                </div>
+            </section>
+        </main>
+<!---------------------------------------------------------------------FOOTER---------------------------------------------------------------->
+        <footer>
+            <p class="p1">Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.twitter.com/bostonceltics/"><img src="../assets/img/twitter.png" alt="twitter" class="twitter" width="512" height="512"></a>
+                <a href="https://www.instagram.com/celtics/"><img src="../assets/img/instagram.png" alt="instagram icons" class="instagram" width="512" height="512"></a>
+                <a href="https://www.tiktok.com/@celtics/"><img src="../assets/img/tik-tok.png" alt="tiktok" class="tiktok" width="512" height="512"></a>
+                <a href="https://www.youtube.com/bostonceltics/"><img src="../assets/img/youtube.png" alt="youtube" class="youtube" width="512" height="512"></a>
+            <p class="aviso-legal">Aviso Legal</p>
+            <p class="direccion-empresa">Direccion: 100 Legends Way, Boston, USA</p>
+        </footer>
+    </body>
+</html>
